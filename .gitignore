@@ -1,0 +1,56 @@
+# Large media / audio / video
+*.webm
+*.mp4
+*.m4a
+*.wav
+*.mp3
+*.glb
+*.zip
+*.gif
+
+# Original huge scans (>100MB)
+**/original_book.pdf
+
+# Heavy illustrations & caches (not needed for website repository)
+illustrations/
+extracted_images/
+illustrations_recropped/
+illustrations_verified/
+illustrations_jpg/
+audit_crops/
+*.png
+*.jpg
+!docs/assets/cover.jpg
+
+# Generated PDF builds
+*.pdf
+
+# Python & caches
+__pycache__/
+*.py[cod]
+.venv/
+
+# Antigravity logs & internal test files
+.system_generated/
+*.log
+header_labels.json
+index_mapping_cache.json
+remaining_articles.txt
+resp_bytes.bin
+results_merged.json
+unformatted_headings.json
+empty_figures_catalog.json
+candidates_first120.json
+illustrations_ground_truth.json
+illustrations_verified_mapping.json
+
+# Exclude unrelated project directories
+TelegramForwarder/
+TelegramForwarder.Tests/
+TelegramUserTools/
+pilot/
+vrf/
+encyclopedia-ua/
+sub_*.typ
+batch2_*.typ
+dust2_*.html
